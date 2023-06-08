@@ -27,7 +27,10 @@
           <a href="index.html"><span class="web-color">Web</span>Studio</a>
           <nav class="navigation">
             <ul class="nav-manu-first">
-              <li class="agencja-pad"><a href="index.html">Agencja</a></li>
+              <li class="agencja-pad">
+                <a href="index.html">Agencja</a>
+                <div class="underscore"></div>
+              </li>
               <li class="portfolio-kontakt-pad">
                 <a href="portfolio.html">Portfolio</a>
               </li>
@@ -62,7 +65,9 @@
       <section class="background-dark">
         <div class="container">
           <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-          <button type="button" class="button-main-page">Zamów usługę</button>
+          <button class="button-main-page" data-modal-open>Zamów usługę</button>
+      
+      </div>
         </div>
       </section>
       <section class="section">
@@ -119,29 +124,32 @@
           </ul>
           <h2>Czym się zajmujemy</h2>
           <ul class="img-display">
-            <li>
+            <li class="positioning">
               <img
                 src="images/what-we-do/typing-on-keyboard.jpg"
                 alt="hands on keyboard"
-                width="370"
+                width="370%"
                 height="294"
               />
+              <p class="what-we-do-description box">Aplikacje komputerowe</p>
             </li>
-            <li>
+            <li class="positioning">
               <img
                 src="images/what-we-do/phone-in-hand.jpg"
                 alt="mobile phone in hand and second hand on laptop"
-                width="370"
+                width="370px"
                 height="294"
               />
+               <p class="what-we-do-description box">Aplikacje mobilne</p>
             </li>
-            <li>
+            <li class="positioning">
               <img
                 src="images/what-we-do/tablet-in-hand.jpg"
                 alt="tablet in hand"
-                width="370"
+                width="370px"
                 height="294"
               />
+               <p class="what-we-do-description box">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -418,5 +426,14 @@
         </div>
       </div>
     </footer>
+   <div class="is-hidden backdrop" data-modal>
+    <div class="modal">
+            <button class="close-btn" data-modal-close>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+              </svg>
+            </button>
+          </div></div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
